@@ -1,0 +1,34 @@
+### Check server
+GET http://localhost:3000/
+
+### Create student
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "regNo": "URK24CS1131",
+  "name": "Ashen Paul",
+  "department": "Computer Science and Engineering",
+  "email": "ashen@gmail.com",
+  "cgpa": 8.5
+}
+
+### Read all students
+GET http://localhost:3000/students
+
+### Read one student
+GET http://localhost:3000/students/URK24CS1131
+
+### Update student
+PUT http://localhost:3000/students/URK24CS1131
+Content-Type: application/json
+
+{
+  "name": "Ashen Paul",
+  "department": "CSE",
+  "email": "ashen@gmail.com",
+  "cgpa": 9.0
+}
+
+### Delete student
+DELETE http://localhost:3000/students/URK24CS1131
